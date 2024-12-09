@@ -1,0 +1,58 @@
+# Python-related files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.sqlite3
+
+# Environment variables
+.env
+
+# Virtual environments
+.venv/
+env/
+*.env
+.env.*
+.virtualenv/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints
+
+# Logs and Debugging
+*.log
+*.out
+*.err
+
+# Pytest and Coverage
+htmlcov/
+.tox/
+.cache/
+coverage/
+*.cover
+*.coverage
+nosetests.xml
+*.unit.xml
+*.pytest_cache/
+
+# Ignore temporary files created by text editors
+*.swp
+*~
+*.swo
+*.bak
+
+# Ignore specific IDE and editor configurations
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore Ollama CLI-related outputs if any
+*.ollama_logs/
+
+# Docker and Deployment files (optional, adjust if needed)
+*.docker
+*.dockercfg
+
+# Ignore requirements file backup (if created)
+requirements.txt.bak
+.env
