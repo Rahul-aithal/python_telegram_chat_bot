@@ -56,3 +56,7 @@ nosetests.xml
 # Ignore requirements file backup (if created)
 requirements.txt.bak
 .env
+
+
+#Ignore data
+outputs/
