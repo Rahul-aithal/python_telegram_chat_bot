@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 sentiment_analyzer = pipeline("sentiment-analysis")
 
 # File to store sentiment analysis logs
-SENTIMENT_CSV = "sentiment_analysis.csv"
+SENTIMENT_CSV = "outputs/sentiment_analysis.csv"
 
 # Initialize the CSV file with headers (if not exists)
 def initialize_csv():
@@ -48,7 +48,7 @@ def interact_with_ollama(user_message: str) -> str:
         # Running Ollama with the user input
         logger.info(f"Sending message to Meta LLM via CLI: {user_message}")
         process = subprocess.run(
-            ["ollama", "run", "llama3.2"],  # Adjust "llama2" based on your Ollama model
+            ["ollama", "run", "llama3.2"],  # Adjust "llama3.2" based on your Ollama model
             input=user_message,
             text=True,
             capture_output=True,
